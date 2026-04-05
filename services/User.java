@@ -1,3 +1,4 @@
+package services;
 public class User {
     private int id;
     private String name;
@@ -27,5 +28,8 @@ public class User {
     }
     public Cart getOrders() {
         return orders;
+    }
+    public void clearOrders() {
+        this.orders = new Cart(); // Resets the cart to an empty state
     }
 }

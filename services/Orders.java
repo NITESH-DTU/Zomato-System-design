@@ -1,5 +1,7 @@
+package services;
 import java.lang.reflect.Array;
 import java.util.ArrayList;
+
 import Interfaces.PaymentStratergy;
 public class Orders {
     private User user;
@@ -54,6 +56,9 @@ public class Orders {
         }
         totalAmount=amount;
         return totalAmount;
+    }
+    public void get_type(){
+        System.out.println("order created using normal order");
     }
 
    

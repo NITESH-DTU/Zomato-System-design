@@ -1,13 +1,15 @@
+package manager;
 import java.util.ArrayList;
-import  services.Restaurent;
+import  services.*;
 public class RestaurantManager {
     private static RestaurantManager manager;
-    private ArrayList<Restaurent> restaurants;
+    private static ArrayList<Restaurent> restaurants;
     private RestaurantManager(){
 
     }
     public static   synchronized RestaurantManager getInstance(){
         if(manager==null){
+            restaurants=new ArrayList<Restaurent>();
             manager=new RestaurantManager();
         }
         return manager;
@@ -18,9 +20,18 @@ public class RestaurantManager {
     public ArrayList<Restaurent> getRestaurants() {
         return restaurants;
     }
-    public Restaurent getRestaurantByLocation(String Location){
+    public Restaurent getRestaurantByid(int id){
         for(Restaurent restaurant:restaurants){
-            if(restaurant.getLocation()==Location ){
+            if(restaurant.getId()==id){
+                return restaurant;
+            }
+        }
+        return null;
+    }
+      public Restaurent getRestaurantByLocation(String location){
+        
+        for(Restaurent restaurant:restaurants){
+            if(restaurant.getLocation()==location){
                 return restaurant;
             }
         }

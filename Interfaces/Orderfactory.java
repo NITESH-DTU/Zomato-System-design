@@ -1,5 +1,5 @@
 package Interfaces;
-
+import services.*;
 public interface Orderfactory {
-    void createOrder();
+    Orders createOrder(String type);
 }

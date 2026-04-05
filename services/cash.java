@@ -1,10 +1,10 @@
 package services;
 import Interfaces.PaymentStratergy;
 
-public class upi implements PaymentStratergy{
+public class cash  implements PaymentStratergy{
     @Override
     public void pay(double amount){
-        System.out.println("paid "+amount+" using upi");
+        System.out.println("paid "+amount+" using cash");
     }
 
 }
