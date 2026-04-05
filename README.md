@@ -36,6 +36,21 @@ This system uses industry-standard design patterns to keep the code modular and 
 
 3. **Run the application:**
    `java Main`
+## 🖥️ Example Output
+
+When you run `Main.java`, the system initializes seed data and simulates a user journey:
+
+```text
+Initializing system data...
+
+--- Welcome to Zomato ---
+Restaurant found: Pizza Palace
+Menu:
+Margherita Pizza - 250.0
+Garlic Bread - 100.0
+paid 350.0 using upi
+Order placed successfully for Nitesh at time sunday night 8 pm with payment method upi and bill of 350.0
+```
 
 ## 🌱 What I Learned
 Building this project solidified my understanding of backend architecture before integrating a real database. It provided hands-on experience with identifying tight coupling and resolving it using abstraction, interfaces, and specific design patterns.
